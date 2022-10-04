@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Assignment 3</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <h1>String Duplication</h1>
+  <div id="app">
+    <div style="border: 1pt; border-style: solid; padding: 30pt">
+      <h2>Message</h2>
+      <input class="form-control" v-model.lazy="messageToDuplicate" type="text" placeholder="Type the message to duplicate"/>
+      <h3>Amount to duplicate</h3>
+      <input class="form-control" v-model.number.lazy="amount" type="number" placeholder="Amount of times to duplicate"/>
+      <button class="btn btn-primary col-lg-2" @click="duplicate()">Do it!</button>
+      <div>{{result}}</div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
